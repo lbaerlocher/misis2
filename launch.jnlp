@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<jnlp codebase="https://www.fasteris.com/apps" href="launch.jnlp" spec="1.0+">
+    <information>
+        <title>appMISIS</title>
+        <vendor>Jonathan Seguin, Fasteris SA, Plan-les-Ouates - Institute of Botanny, University of Basel - Switzerland</vendor>
+        <homepage href=""/>
+        <description>appMISIS, a tool to find hot/cold spots or SNPs on small size genome (e.g. virus).</description>
+        <description kind="short">appMISIS</description>
+    </information>
+    <update check="always"/>
+    <security>
+<all-permissions/>
+</security>
+    <resources>
+        <j2se java-vm-args="-Xmx1g -Xms1g" version="1.7+"/>
+        <jar href="appMISIS.jar" main="true"/>
+    <jar href="lib/biojava3-core-3.0.7.jar"/>
+<jar href="lib/jackson-annotations-2.1.1.jar"/>
+<jar href="lib/jackson-core-2.1.1.jar"/>
+<jar href="lib/jackson-databind-2.1.1.jar"/>
+<jar href="lib/biojava-1.7.1.jar"/>
+<jar href="lib/jersey-client-1.18.1.jar"/>
+<jar href="lib/jersey-core-1.18.1.jar"/>
+<jar href="lib/sam-1.77.jar"/>
+<jar href="lib/deploy.jar"/>
+<jar href="lib/plugin.jar"/>
+</resources>
+    <application-desc main-class="appmisis.Main">
+    </application-desc>
+</jnlp>
